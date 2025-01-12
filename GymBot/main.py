@@ -112,7 +112,7 @@ def analyze_answers(chat_id, call):
         return
 
     if goal == "lose_weight":
-        with (open("C:/Users/Александр/PycharmProjects/pythonProject4/GymBot/weight_loss_program.pdf", "rb") as pdf_file):
+        with (open("C:/Users/Александр/PycharmProjects/pythonProject4/weight_loss_program.pdf", "rb") as pdf_file):
             bot.send_document(chat_id, pdf_file, caption="Вот ваша программа для похудения!")
     elif goal in ["gain_mass", "strengthen_body"]:
         question = final_text["choose_program"]
@@ -125,10 +125,10 @@ def analyze_answers(chat_id, call):
 def send_program(call):
     program = call.data
     if program == "split":
-        with open("C:/Users/Александр/PycharmProjects/pythonProject4/GymBot/split_training.pdf", "rb") as pdf_file:
+        with open("C:/Users/Александр/PycharmProjects/pythonProject4/split_training.pdf", "rb") as pdf_file:
             bot.send_document(call.message.chat.id, pdf_file, caption="Вот ваша программа сплит тренировки!")
     elif program == "fullbody":
-        with open("C:/Users/Александр/PycharmProjects/pythonProject4/GymBot/fullbody_training.pdf",
+        with open("C:/Users/Александр/PycharmProjects/pythonProject4/fullbody_training.pdf",
                   "rb") as pdf_file:
             bot.send_document(call.message.chat.id, pdf_file, caption="Вот ваша программа фуллбоди тренировки!")
 
