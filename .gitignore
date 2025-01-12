@@ -7,7 +7,5 @@ __pycache__/
 # Игнорирование папки venv 
 venv/
 
-#Игнорирование файлов пдф
-fullbody_training.pdf
-split_training.pdf
-weight_loss_program.pdf
+#Игнорирование privacy.py
+privacy.py
