@@ -8,7 +8,6 @@ __pycache__/
 venv/
 
 #Игнорирование файлов пдф
-*.pdf/
-
-
-
+fullbody_training
+split_training
+weight_loss_program
